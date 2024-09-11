@@ -1,17 +1,30 @@
-Array access practice
+//Array access practice
 
-I've provided you with a leaderboard array, which consists of 4 strings. Without touching line 1, please make the following changes:
-
-Unfortunately, I misspelled the 2nd name in the leaderboard array. I meant to write "Luna" instead of "Lua". Please update it to "Luna" (without changing line 1)
-
-Bellatrix has fallen off the leaderboard and has been replaced by Draco! Please update the last element of the array so that it holds "Draco" instead of "Bellatrix" (once again, please do this without changing line 1)
 
 const leaderboard = ["Harry", "Lua", "Hermione", "Bellatrix"]; //DON'T TOUCH THIS LINE!
 
 // YOUR CODE BELOW HERE:
+
+
+leaderboard.splice(1,1, "Luna");
+
+console.log(leaderboard);
+
+
+leaderboard.splice(3,1,"Draco");
+
+console.log(leaderboard);
+
+
+
+
+
+//--------------------------------------------------------------------------------
+
+/*
 Selection of elements
 
-Create an array that should look like suche : ["one","two","three"]
+Create an array that should look like suche : ["one","two","three"] */
 
 In order to do that, only do manipulations from this folowing array :
 
@@ -25,7 +38,15 @@ const initialArray = [
   "I am a big bad wolf",
   ["one"],
 ];
-Push/Pop/Shift/Unshift Practice
+
+let newInfo = [initialArray[7][0],initialArray[2][1],initialArray[4][0]];
+
+console.log(newInfo);
+
+
+
+//-------------------------------------------------------------------------------------
+/*Push/Pop/Shift/Unshift Practice
 
 I've provided you with an array called planets. Unfortunately, I'm an idiot who doesn't know much about our solar system and I made some mistakes. Please help me fix the planets array! Using the array methods we just learned...
 
@@ -35,8 +56,17 @@ Add in Saturn at the very end of the planets array
 
 Add Mercury as the first element in the planets array.
 
-At the end of your hard work, planets should look like this: ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn"]
+At the end of your hard work, planets should look like this: ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn"]*/
 
 const planets = ["The Moon", "Venus", "Earth", "Mars", "Jupiter"]; //DO NOT TOUCH THIS LINE!
 
 // YOUR CODE GOES BELOW THIS LINE:
+
+planets.shift()
+console.log(planets);
+
+planets.push('Saturne')
+console.log(planets)
+
+planets.unshift('Mercury')
+console.log(planets);
