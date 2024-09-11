@@ -33,3 +33,5 @@ alert(calcul);
 let first = parseFloat(prompt("entrez un nombre"));
 let seconde = parseFloat(prompt(" Entre un second nombre"))
 alert(first + seconde);
+
+//------------------------------
