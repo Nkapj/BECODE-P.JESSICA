@@ -10,7 +10,6 @@ leaderboard.splice(1,1, "Luna");
 
 console.log(leaderboard);
 
-
 leaderboard.splice(3,1,"Draco");
 
 console.log(leaderboard);
