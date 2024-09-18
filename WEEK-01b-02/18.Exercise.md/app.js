@@ -1,5 +1,5 @@
 
-
+/*
 
 let nombMax = parseInt(prompt("Veuillez saisir un nombre maximal de votre choix"));
 
@@ -24,4 +24,48 @@ let nombMax = parseInt(prompt("Veuillez saisir un nombre maximal de votre choix"
     }
 
 
-alert(`Félicitaition vous avez trouver ne nombre secret, qui est ${aleatoire} en ${attempts} tentative`);
+alert(`Félicitaition vous avez trouver ne nombre secret, qui est ${aleatoire} en ${attempts} tentative`);*/
+
+
+///----------------------------------
+
+let todos = [];
+let command;
+// on utlise hile car il ya que une condition/ demande...
+
+while (command !== "quit") {
+  command = prompt(`new to add a todo
+list to see all the todos
+delete to remove a specific todo
+quit to exit the program`);
+
+  if (command === 'new') {
+    let newTodo = prompt("Enter a new todo:");
+    todos.push(newTodo);
+    console.log(`${newTodo} has been added to the list.`);
+
+
+  } else if (command === 'list') {
+    console.log("********* TODO LIST *********");
+    todos.forEach((todo, index) => {
+      console.log(`${index + 1}. ${todo}`);
+    });
+
+
+  } else if (command === 'delete') {
+    let indexToDelete = prompt("Enter the number of the todo to delete:");
+    indexToDelete = parseInt(indexToDelete) - 1; // Convert to 0-based index
+    
+    if (indexToDelete >= 0 && indexToDelete < todos.length) {
+      let deletedTodo = todos.splice(indexToDelete, 1);
+      console.log(`${deletedTodo} has been removed from the list.`);
+    } else {
+      console.log("Invalid number.");
+    }
+  } else if (command === 'quit') {
+    console.log("Exiting the program...");
+    break;
+  } else {
+    console.log("Invalid command.");
+  }
+}
