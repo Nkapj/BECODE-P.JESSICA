@@ -1,5 +1,5 @@
 
-function calcul(probability,prize,pay) {
+function calcul(probability,prize,pay) { 
     if (probability*prize - pay > 0 ){
         return true;
     }else {

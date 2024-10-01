@@ -1,0 +1,33 @@
+body{
+    background-color: hsl(39, 6, 83)
+}
+
+.menu {
+    color: rgb(12, 37, 134)
+}
+
+.menu li a {
+    color: purple;
+}
+
+.menu a span {
+    color : red
+}
+
+div[data-role="dropdown"] ul li a span {
+    color: green
+}
+
+div[data-role="dropdown"] ul li a  {
+    color: blue
+}
+
+div[data-role="dropdown"] {
+    background-color: antiquewhite;
+}
+
+div[data-role="dropdown"] ul li:nth-child(2) a {
+    
+    background-color: purple;
+
+}
