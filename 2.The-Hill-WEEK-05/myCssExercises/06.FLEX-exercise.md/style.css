@@ -37,26 +37,36 @@ body{
     justify-content: center;
     align-items: center;
     width: 288px;
-    height: 469px;
+    min-height: 403px;
     border-radius: 15px;
     background-color: #ffffff ;
-    padding: 30px 20px;
+    padding: 30px 40px 20px 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 1);
+    position: relative;
 }
 
 
-h1 {
+.titre {
     font-size: 36px;
     font-weight: 300;
-    margin-bottom: 68px;
+    margin-bottom: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin-top: 20px;
 
 }
 
 h2{
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.13px;
+    font-family: "Allan";
+    padding-left: 70px;
+    padding-bottom: 70px;
+    color: #2D4480;
+    padding-top: 10px;
+
+
     
 
 
@@ -65,24 +75,67 @@ h2{
 .liste {
     font-size: 16px;
     font-weight: 600;
-    letter-spacing: 0.6px;
+    letter-spacing: 1px;
     color: #000000;
     text-transform: uppercase;
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 100%;
     letter-spacing: 0.6px;
     padding-left: 40px;   
     line-height: 33px;
+}
 
+.ligne {
+    width: 70%;
+    height: 1.5px;
+    color: #000000;
+    background-color: #000000;
+    
+    
+    
 }
 
 .liste li {
-    margin-bottom: 10px;
-    display: flex;
+    margin-bottom: 12px;
     align-items: center;
+    
 }
 
-.liste li::before {
-    content: "";
+
+
+.bouton {
+    border-radius: 27px;
+    bottom: -30px; /* Garde le bouton à 20px de la bordure inférieure */
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    
+}
+
+button {
+    width: 180px;
+    height: 68px;
+    background-color: #ffbc0f;
+    border-radius: 30px;
+    text-align: center;
+    padding: 25px 0 ;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #253868;
+    font-weight: 600;
+    
+
+}
+
+.fin{
+    padding-top: 10px;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+   
 }
