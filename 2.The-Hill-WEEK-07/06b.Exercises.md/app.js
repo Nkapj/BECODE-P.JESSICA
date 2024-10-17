@@ -27,3 +27,6 @@ tete.forEach(function(a){
 
 document.querySelector("h1").style.textTransform = "uppercase";
 
+/////////////////////////////////////////////////////
+// exo 2//
+
