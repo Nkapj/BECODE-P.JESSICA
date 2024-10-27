@@ -1,0 +1,24 @@
+
+
+#todoList li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.task-text {
+    flex-grow: 1;
+    margin-right: 50px;
+}
+
+
+.btnDele {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;    
+}
+
