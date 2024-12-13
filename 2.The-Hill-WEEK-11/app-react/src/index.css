@@ -36,7 +36,7 @@ body{
 
 input {
   font-size: 15px;  
-  width: 70%;
+  width: 90%;
   padding: 5px 3px;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -44,11 +44,8 @@ input {
   border-radius: 20px;
 }
 
-label{
-
-  font-size: 16px; 
-  color: rgba(1, 0, 0, 0.701);
-  font-family: 'Times New Roman', Times, serif;
+input placeholder {
+  font-size: 10px;
 }
 
 input.vert {
@@ -71,6 +68,7 @@ input.rouge {
   gap: 30px;
   padding: 20px;
   border-radius: 15px;
+  margin: 20px 0;
 }
 
 .result-container {
@@ -128,8 +126,8 @@ button:hover {
 }
 
 h1 {
-  padding-left: 150px;
-  color: rgba(4, 4, 4, 0.701);
+  padding-left: 100px;
+  color: rgba(0, 0, 0, 0.701);
 }
 
 .data-list {

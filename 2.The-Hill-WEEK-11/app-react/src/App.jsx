@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <h1>Formulaire</h1>
+    
     <MonFormulaire/>
     </>
   )

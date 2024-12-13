@@ -193,11 +193,17 @@ const handleSubmit = (e) => {
 
 
 return (
-  <div className="container">   
+
+  <div className="container"> 
+  
     <div className='root'>
+     <div className="titre">
+    <h1>Formulaire</h1>
+    </div> 
     <div>
-      <label htmlFor="firstname">First name:</label>
+      <label htmlFor="firstname"></label>
       <input 
+      placeholder="First name"
       id="firstname" 
       name="firstname" 
       type="text" 
@@ -212,8 +218,9 @@ return (
     </div>
 
     <div>
-    <label htmlFor="lastname">Last name:</label>
+    <label htmlFor="lastname"></label>
     <input 
+      placeholder="Last name"
       id="lastname" 
       name="lastname"  
       type="text" value={inputData.lastname} 
@@ -227,8 +234,9 @@ return (
     </div>
 
     <div>
-    <label htmlFor="age">Age:</label>
+    <label htmlFor="age"></label>
     <input 
+      placeholder="Age"
       id="age" 
       name="age" 
       type="number"
@@ -243,8 +251,9 @@ return (
     </div>
     
     <div>
-    <label htmlFor="email">Email:</label>
+    <label htmlFor="email"></label>
     <input 
+      placeholder="Email"
       id="email" 
       name="email" 
       type="email"
@@ -259,8 +268,9 @@ return (
     </div>
     
     <div>
-    <label htmlFor="phonenumber">Phone number:</label>
+    <label htmlFor="phonenumber"></label>
     <input 
+      placeholder="Phone number"
       id="phonenumber" 
       name="phonenumber" 
       type="tel"
@@ -275,8 +285,9 @@ return (
     </div>
 
     <div>
-    <label htmlFor="password">Password:</label>
+    <label htmlFor="password"></label>
     <input 
+      placeholder="Password"
       id="password" 
       name="password" 
       type="password"
@@ -292,8 +303,9 @@ return (
     </div>
 
     <div>
-    <label htmlFor="repeatpassword">Confirm Password:</label>
+    <label htmlFor="repeatpassword"></label>
     <input 
+      placeholder="Confirm Password"
       id="repeatPassword" 
       name="repeatPassword" 
       type="password" 
